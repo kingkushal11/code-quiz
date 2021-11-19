@@ -43,6 +43,33 @@ input[type=text]{
     justify-content: end;
     color: purple;
 }
+#highscores {
+	flex-direction: column;
+}
+ol{
+	width: 400px;
+}
+ol>li{
+	list-style-position: inside;
+	padding-left: 10px;
+	background: #fff;
+}
+ol>li:nth-child(odd){
+	background: #eee;
+}
+#startbtn {
+	color: white;
+	width: 150px;
+	padding: 10px;
+	border: 0;
+	background: #ffc107;
+}
+#time{
+    display: flex;
+    justify-content: end;
+    color: purple;
+}
+
 #time:hover{
     color:crimson;
 }
@@ -66,15 +93,20 @@ a {
     display: none;
 }
   
-.button-wrapper{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;   
+.answers{
+	margin: 0 10px;
+	padding: 10px;
+	border: 0;
 }
-.button-wrapper button{
-    width: 200px;
-    color:black;
-    background-color: purple;
-    display: block;
+.answers:hover{
+	background: #007bff;
+	color: white;
+}
+.red,.red:hover{
+	background: #c82333;
+	color: white;
+}
+.green,.green:hover{
+	background: #218838;
+	color: white;
 }
