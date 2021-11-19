@@ -29,3 +29,7 @@ THEN I can save my initials and my score
 ```
 ## Screenshot
 <img src=assets\_C__Users_kusha_Desktop_homework_code-quiz_index.html.png>
+
+## Links
+ - https://kingkushal11.github.io/code-quiz/
+ - https://github.com/kingkushal11
