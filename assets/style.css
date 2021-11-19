@@ -38,11 +38,7 @@ input[type=text]{
     justify-content: center;
 }
 
-#time{
-    display: flex;
-    justify-content: end;
-    color: purple;
-}
+
 #highscores {
 	flex-direction: column;
 }
@@ -91,6 +87,7 @@ a {
 }
 .finals{
     display: none;
+    text-align: center;
 }
   
 .answers{

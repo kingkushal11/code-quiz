@@ -2,7 +2,7 @@
 
 ## Description 
 
-In this project, I worked on a multiple-choice code quiz, 
+In this project, I worked on a multiple-choice code quiz. When the user clicks start, the multiple choices will pop up and time will start. When you answer it correctly, the button will be green, and when you answer it incorrectly, the button will be red and time will be reduced by 10 sec. Finally, you can save your old and new scores and view them anytime.
 
 ## User Story
 
@@ -27,3 +27,5 @@ THEN the game is over
 WHEN the game is over
 THEN I can save my initials and my score
 ```
+## Screenshot
+<img src=assets\_C__Users_kusha_Desktop_homework_code-quiz_index.html.png>

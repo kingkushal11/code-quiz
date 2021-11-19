@@ -32,6 +32,7 @@ function checkAnswer(n) {
     }
 }
 function displayQuestion() {
+    initial.style.display = "none";
     canAnswer = true;
     current = questionlist[num];
     question.textContent = current.question;
@@ -56,6 +57,7 @@ var question = document.querySelector("#question");
 var done = document.querySelector("#done");
 var final = document.querySelector("#final");
 var scores = document.querySelector("#scores");
+var initial = document.querySelector(".initial")
 var canAnswer = true;
 var current, starttime;
 
