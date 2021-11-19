@@ -4,10 +4,27 @@ body{
     background-color: bisque;
     padding: 0;
     margin: 0;
-    width: 100vw;
-    height: 100vh;
     justify-content: center;
     align-items: center;
+}
+button{
+    border: 0;
+    padding: 10px;
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    font-size: 15px;
+    cursor: pointer;
+}
+input[type=text]{
+    padding: 9px;
+    width: 200px;
+}
+#wrapper{
+    display: none;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
 }
 #questions{
     margin: 90px;
@@ -15,11 +32,12 @@ body{
     font-weight: bold;
     padding: 10px;
 }
-#start{
+#start, #highscores{
     display: flex;
     align-items: center;
     justify-content: center;
 }
+
 #time{
     display: flex;
     justify-content: end;
@@ -40,4 +58,23 @@ body{
 }
 #scores{
     color: purple;
+}
+a {
+    text-decoration: none;
+}
+.finals{
+    display: none;
+}
+  
+.button-wrapper{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;   
+}
+.button-wrapper button{
+    width: 200px;
+    color:black;
+    background-color: purple;
+    display: block;
 }

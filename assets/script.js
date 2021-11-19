@@ -2,10 +2,12 @@ var startbtn = document.querySelector("#startbtn");
 var timer = document.querySelector("#time");
 var submitbtn = document.querySelector("#submit");
 var initials = document.querySelector("#initials") ;
+var initial = document.querySelector(".initial")
 
 var time = 60;
 var num = 0;
-var score = 0
+var score = 0;
+var timer;
 var questionlist = [
     {
         question: "Commonly used data types DO NOT include:",
@@ -36,6 +38,7 @@ var questionlist = [
 ]
 
 var startquiz = function(){
+  initial.style.display = "none";
   starttime();  
   questions();
 
@@ -82,5 +85,8 @@ var checkanswer = function(event){
     num ++
     questions();
 }
+// startbtn.addEventListener("click"){
+
+// }
 
 startbtn.onclick=startquiz;
