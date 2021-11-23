@@ -37,7 +37,7 @@ function displayQuestion() {
     current = questionlist[num];
     question.textContent = current.question;
     answers.forEach(function (answer, i) {
-        answer.textContent = current.answers[i];
+    answer.textContent = current.answers[i];
     });
 }
 
@@ -101,15 +101,16 @@ var questionlist = [
     },
 ];
 
+
 startbtn.addEventListener('click', function () {
     wrapper.style.display = 'flex';
     displayQuestion();
     this.parentElement.style.display = 'none';
 
-  
+   
     starttime =
         setInterval(() => {
-         
+           
             time = Math.max(0, time - 1);
             timer.textContent = time;
             if (time == 0) {
@@ -120,8 +121,22 @@ startbtn.addEventListener('click', function () {
 });
 
 
+
 answers.forEach(function (answer, i) {
     answer.addEventListener('click', function () { checkAnswer(i) });
+});
+
+initials.addEventListener("keyup", function(e) {
+        if (e.key === "Enter") {
+    if (initials.value.trim().length) {
+        highscores.push({ "name": initials.value, "value": time });
+        localStorage.highscores = JSON.stringify(highscores);
+        location.href = 'highscores.html';
+    }
+    else {
+        alert("initials can't be empty");
+    }
+        }
 });
 
 submitbtn.addEventListener('click', function () {
