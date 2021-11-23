@@ -43,6 +43,7 @@ function displayQuestion() {
 
 function finished() {
     wrapper.style.display = 'none';
+    questions.style.display = 'none';
     final.innerHTML = time;
     done.style.display = 'block';
     clearInterval(starttime);
