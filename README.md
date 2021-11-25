@@ -32,4 +32,4 @@ THEN I can save my initials and my score
 
 ## Links
  - https://kingkushal11.github.io/code-quiz/
- - https://github.com/kingkushal11
+ - https://github.com/kingkushal11/code-quiz
